@@ -1065,3 +1065,137 @@ form button:hover {
         max-width: 390px !important;
     }
 }
+/* ===== FINAL HOME LAYOUT FIX ===== */
+
+#home {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 330px !important;
+    align-items: center !important;
+    gap: 60px !important;
+    padding: 65px 7% !important;
+    min-height: 88vh !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+/* LEFT */
+#home .home-left {
+    width: 100% !important;
+    max-width: 650px !important;
+    min-width: 0 !important;
+    text-align: left !important;
+}
+
+#home h1 {
+    font-size: 56px !important;
+    line-height: 1.05 !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+}
+
+#home h2 {
+    font-size: 32px !important;
+    line-height: 1.25 !important;
+    margin: 14px 0 22px !important;
+    white-space: nowrap !important;
+}
+
+#home .home-description {
+    max-width: 540px !important;
+    font-size: 17px !important;
+    line-height: 1.65 !important;
+    margin-bottom: 28px !important;
+}
+
+/* BUTTONS */
+#home .home-buttons {
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 14px !important;
+}
+
+/* RIGHT CARD */
+#home .home-right {
+    width: 330px !important;
+    max-width: 330px !important;
+    min-width: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#home .code-card {
+    width: 330px !important;
+    max-width: 330px !important;
+    min-height: 240px !important;
+    height: 240px !important;
+    box-sizing: border-box !important;
+    padding: 30px !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+}
+
+/* CARD CONTENT */
+#home .code-card span {
+    font-size: 38px !important;
+    margin-bottom: 14px !important;
+}
+
+#home .code-card h3 {
+    font-size: 23px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 10px !important;
+}
+
+#home .code-card p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    #home {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        padding: 55px 6% !important;
+        text-align: center !important;
+        overflow: visible !important;
+    }
+
+    #home .home-left {
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+
+    #home h1 {
+        font-size: 44px !important;
+        white-space: normal !important;
+    }
+
+    #home h2 {
+        font-size: 29px !important;
+        white-space: normal !important;
+        text-align: center !important;
+    }
+
+    #home .home-description {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+    #home .home-buttons {
+        justify-content: center !important;
+    }
+
+    #home .home-right {
+        width: 100% !important;
+        max-width: 330px !important;
+        margin: 0 auto !important;
+    }
+
+    #home .code-card {
+        width: 100% !important;
+        max-width: 330px !important;
+    }
+}
