@@ -497,3 +497,109 @@ form button:hover {
         margin-right: auto;
     }
 }
+/* ===== PROFESSIONAL HOME PAGE ===== */
+
+#home {
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    gap: 70px;
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #ffffff, #f4f8ff);
+}
+
+/* Left side */
+#home h1 {
+    grid-column: 1;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #222;
+}
+
+#home h2 {
+    grid-column: 1;
+    margin: 8px 0 0;
+    font-size: 58px;
+    line-height: 1.05;
+    font-weight: 800;
+    color: #1769d1;
+}
+
+/* Right side */
+#home h3 {
+    grid-column: 2;
+    margin: 0 0 18px;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #1769d1;
+}
+
+#home p {
+    grid-column: 2;
+    max-width: 560px;
+    margin: 0 0 28px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Project button */
+#home a {
+    grid-column: 2;
+    width: fit-content;
+    padding: 14px 28px;
+    border-radius: 10px;
+    background: #1769d1;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+#home a:hover {
+    background: #0d4fa8;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(23, 105, 209, 0.25);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #home {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+        padding: 70px 25px;
+    }
+
+    #home h1,
+    #home h2,
+    #home h3,
+    #home p,
+    #home a {
+        grid-column: 1;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+
+    #home h2 {
+        font-size: 46px;
+    }
+
+    #home h3 {
+        font-size: 30px;
+    }
+
+    #home p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #home a {
+        margin: 0 auto;
+    }
+}
