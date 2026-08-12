@@ -409,3 +409,91 @@ form button:hover {
         width: 160px;
     }
 }
+/* ===== NEW HOME DESIGN ===== */
+
+#home {
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #f8fbff, #ffffff);
+}
+
+/* Hello + Name */
+#home h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    color: #111827;
+}
+
+#home h2 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin: 0 0 15px;
+    color: #2563eb;
+}
+
+/* Web Development Learner */
+#home h3 {
+    font-size: 28px;
+    margin: 0 0 20px;
+    color: #1d4ed8;
+}
+
+/* Description */
+#home p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #4b5563;
+    margin: 0 0 28px;
+}
+
+/* Project Button */
+#home a {
+    display: inline-block;
+    padding: 15px 26px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+    transition: 0.3s ease;
+}
+
+#home a:hover {
+    background: #1d4ed8;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.35);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #home {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    #home h1 {
+        font-size: 34px;
+    }
+
+    #home h2 {
+        font-size: 42px;
+    }
+
+    #home h3 {
+        font-size: 24px;
+    }
+
+    #home p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
