@@ -62,51 +62,54 @@ section h2 {
 
 /* ===== Home ===== */
 #home {
-    min-height: 85vh;
-    display: flex;
-    justify-content: center;
+    min-height: 88vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.8fr auto;
     align-items: center;
-    text-align: center;
-    background: white;
+    gap: 30px;
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #ffffff 0%, #eef6ff 100%);
 }
 
 #home h2 {
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 0;
+    color: #111827;
 }
 
 #home h3 {
-    font-size: 24px;
+    font-size: 28px;
+    line-height: 1.3;
     color: #2563eb;
-    margin-bottom: 15px;
+    margin: 0;
 }
 
 #home p {
-    max-width: 650px;
-    margin: auto;
-    color: #555;
-    font-size: 17px;
+    max-width: 600px;
+    margin: 0;
+    color: #4b5563;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
-#home a,
-button {
+#home a {
     display: inline-block;
-    margin-top: 25px;
-    padding: 12px 25px;
+    padding: 14px 24px;
     background: #2563eb;
     color: white;
     text-decoration: none;
-    border: none;
     border-radius: 8px;
-    cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
+    text-align: center;
     transition: 0.3s;
 }
 
-#home a:hover,
-button:hover {
+#home a:hover {
     background: #1d4ed8;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
 }
 
 /* ===== About ===== */
