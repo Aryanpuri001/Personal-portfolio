@@ -735,7 +735,7 @@ form button:hover {
     min-height: 0 !important;
     box-sizing: border-box !important;
 
-    padding: 30px !important;
+    padding: 26px !important;
     border-radius: 18px !important;
 
     background: #111827 !important;
@@ -746,6 +746,22 @@ form button:hover {
     justify-content: center !important;
 
     box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15) !important;
+}
+
+#home .code-card span {
+    font-size: 32px !important;
+    margin-bottom: 12px !important;
+}
+
+#home .code-card h3 {
+    font-size: 21px !important;
+    line-height: 1.25 !important;
+    margin: 0 0 10px !important;
+}
+
+#home .code-card p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
 }
 #home .code-card span {
     display: inline-block;
