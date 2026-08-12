@@ -801,3 +801,59 @@ form button:hover {
         padding: 30px;
     }
 }
+/* ===== HOME FINAL FIX ===== */
+
+#home .home-left {
+    min-width: 0;
+    width: 100%;
+    max-width: 650px;
+}
+
+#home h1 {
+    font-size: 58px;
+    white-space: nowrap;
+}
+
+#home h2 {
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: left;
+    white-space: nowrap;
+    margin: 10px 0 24px;
+}
+
+#home .home-description {
+    max-width: 560px;
+}
+
+#home .home-buttons {
+    margin-top: 5px;
+}
+
+/* Right card */
+#home .code-card {
+    max-width: 390px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    #home h1 {
+        font-size: 46px;
+        white-space: normal;
+    }
+
+    #home h2 {
+        font-size: 30px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    #home .home-left {
+        width: 100%;
+    }
+}
